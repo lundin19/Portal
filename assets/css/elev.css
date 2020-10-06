@@ -1,7 +1,78 @@
 main .elev-card {
-  background-color: teal;
+  display: -ms-grid;
+  display: grid;
+  background-color: #fff;
   margin: 100px 50px;
   width: 479px;
   height: 628px;
-  border-radius: 20px;
+  border-radius: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
+}
+
+main .elev-card .avatar {
+  display: -ms-grid;
+  display: grid;
+  width: 35%;
+  margin: 20px;
+  border-radius: 100%;
+  margin: 55px auto 0 auto;
+}
+
+main .elev-card .elev-navn {
+  position: absolute;
+  top: 34%;
+  left: 9.5%;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main .elev-card .btn-edit {
+  position: absolute;
+  top: 42%;
+  left: 9%;
+  font-size: 15px;
+  width: 14rem;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+main .elev-card .btn-edit:hover {
+  background-color: #c50c0c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .elev-card .p-bio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 70%;
+  text-align: left;
+  margin-top: 85px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: black;
+}
+
+main .elev-card .fab {
+  font-size: 28px;
+  text-align: center;
+  color: #4C6EF5;
 }
