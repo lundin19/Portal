@@ -40,6 +40,8 @@ header nav button:hover {
 }
 
 header .btn-login {
+  position: absolute;
+  left: 76.5%;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -55,6 +57,8 @@ header .btn-login:hover {
 }
 
 header .btn-registrer {
+  position: absolute;
+  left: 81.5%;
   border: none;
   background-color: transparent;
   cursor: pointer;
