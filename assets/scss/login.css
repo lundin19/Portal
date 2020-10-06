@@ -15,7 +15,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-.btn, .btn1, .btn2 {
+.btn {
   background-color: #FF0000;
   color: white;
   padding: 14px 20px;
@@ -33,7 +33,7 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  width: 15%;
+  width: auto;
   padding: 10px 18px;
   background-color: #f44336;
   color: white;
@@ -41,6 +41,7 @@ button:hover {
   border: none;
   cursor: pointer;
   font-weight: 800;
+  width: 100%;
   font-size: 16px;
 }
 
@@ -53,6 +54,7 @@ button:hover {
   border: none;
   cursor: pointer;
   font-weight: 800;
+  width: 100%;
   font-size: 16px;
 }
 
@@ -82,7 +84,7 @@ button:hover {
 }
 
 .login-btn, .login-btn2 {
-  width: 15%;
+  width: 50%;
   background-color: #FF0000;
   color: white;
   padding: 14px 20px;
@@ -90,6 +92,21 @@ button:hover {
   border: none;
   cursor: pointer;
   font-weight: 800;
+  margin-left: 50%;
+  margin-top: -5%;
+}
+
+.login-btn2 {
+  width: 50%;
+  background-color: #FF0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  margin-left: 50%;
+  margin-top: 5%;
 }
 
 span.psw {
@@ -206,10 +223,13 @@ span.psw {
 }
 
 .btn1 {
+  margin-left: 39%;
+  margin-top: 3%;
   background-color: transparent;
   color: black;
   font-weight: 500;
   font-size: 18px;
+  border: none;
 }
 
 .btn2 {
@@ -217,5 +237,6 @@ span.psw {
   background-color: transparent;
   font-weight: 500;
   font-size: 18px;
+  border: none;
 }
 /*# sourceMappingURL=login.css.map */
