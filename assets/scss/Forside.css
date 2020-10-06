@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.hero-image {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://techcollege.dk/media/kqdbbclv/oester_uttrup_vej_1_techcollege.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132230405143230000");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://techcollege.dk/media/kqdbbclv/oester_uttrup_vej_1_techcollege.jpg?anchor=center&mode=crop&width=1280&height=720&rnd=132230405143230000");
+  height: 890px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image .logo {
+  width: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 690px;
+  margin-top: 300px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 10px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-left: -1px;
+}
+
+.grid img {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.grid img:hover {
+  -webkit-box-shadow: 5px 5px 10px 0 black, 5px 5px 10px 0 black;
+          box-shadow: 5px 5px 10px 0 black, 5px 5px 10px 0 black;
+}
+
+.web {
+  position: absolute;
+  top: 990px;
+  left: -115px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  color: #FF4F4E;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 2px 4px #231431;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.medie {
+  position: absolute;
+  top: 990px;
+  left: 320px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  color: #9B2872;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 2px 4px #231431;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.Digital {
+  position: absolute;
+  top: 990px;
+  left: 810px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  color: #88B339;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 2px 4px #231431;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.tekniker {
+  position: absolute;
+  top: 1010px;
+  left: 1305px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  color: #377AB5;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 2px 4px #231431;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.pic1 {
+  height: 318px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .web {
+    position: absolute;
+    top: 650px;
+    left: -120px;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    color: #FF4F4E;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px #231431;
+    -webkit-text-stroke: 2px #000000;
+  }
+  .medie {
+    position: absolute;
+    top: 1000px;
+    left: -158px;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    color: #9B2872;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px #231431;
+    -webkit-text-stroke: 2px #000000;
+  }
+  .Digital {
+    position: absolute;
+    top: 1350px;
+    left: -140px;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    color: #88B339;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px #231431;
+    -webkit-text-stroke: 2px #000000;
+  }
+  .tekniker {
+    position: absolute;
+    top: 1700px;
+    left: -120px;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
+    color: #377AB5;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px #231431;
+    -webkit-text-stroke: 2px #000000;
+  }
+  .logo {
+    float: right;
+    margin: 0 40px 10px 15px;
+    max-width: 80%;
+    max-height: 100%;
+    top: -300px;
+    position: relative;
+  }
+  .hero-image {
+    height: 550px;
+  }
+}
+/*# sourceMappingURL=Forside.css.map */
