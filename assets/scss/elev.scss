@@ -1,11 +1,73 @@
-
 main {
 
     .elev-card {
-        background-color: teal;
+        display: grid;
+        background-color: #fff;
         margin: 100px 50px;
         width: 479px;
         height: 628px;
-        border-radius: 20px;
+        border-radius: 5%;
+        justify-content: center;
+        -webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.30);
+        -moz-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.30);
+        box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.30);
+
+        .avatar {
+            display: grid;
+            width: 35%;
+            margin: 20px;
+            border-radius: 100%;
+            margin: 55px auto 0 auto;
+        }
+
+        .elev-navn {
+            position: absolute;
+            top: 34%;
+            left: 9.5%;
+            letter-spacing: 1px;
+            font-size: 24px;
+            font-weight: 300;
+            color: black;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .btn-edit {
+            position: absolute;
+            top: 42%;
+            left: 9%;
+            font-size: 15px;
+            width: 14rem;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            border: none;
+            color: white;
+            background-color: red;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(197, 12, 12);
+                transition: 0.2s;
+            }
+        }
+
+        .p-bio {
+            display: grid;
+            justify-self: center;
+            width: 70%;
+            text-align: left;
+            margin-top: 85px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            color: black;
+        }
+
+        .fab {
+            font-size: 28px;
+            text-align: center;
+            color: #4C6EF5;
+        }
     }
 }

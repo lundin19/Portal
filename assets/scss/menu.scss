@@ -27,8 +27,24 @@ header {
     transition: all 0.2s;
     z-index: 1;
 
-    button {
-      position: absolute;
+    .button {
+      background-color: #FF0000;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-weight: 800;
+      font-size: 16px;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    }
+
+    .btn-login {
       border: none;
       background-color: transparent;
       cursor: pointer;
@@ -40,15 +56,21 @@ header {
       &:hover {
         color: black;
       }
-    }
-
-    .btn-login {
-      left: 76.5%;
       // border-right: 2px solid white;
       // width: 115px;
     }
     .btn-registrer {
-      left: 81.5%;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: white;
+      margin-top: 50px;
+      font-size: 18px;
+      transition: all 0.2s;
+
+      &:hover {
+        color: black;
+      }
     }
 
     .span-btn {
@@ -92,7 +114,7 @@ header {
       }
     }
   }
-}
+
 
 .toggle-btn {
   display: block;
