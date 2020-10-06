@@ -45,6 +45,9 @@ header {
     }
 
     .btn-login {
+      position: absolute;
+      left: 76.5%;
+      top: 0px;
       border: none;
       background-color: transparent;
       cursor: pointer;
@@ -60,6 +63,9 @@ header {
       // width: 115px;
     }
     .btn-registrer {
+      position: absolute;
+      left: 81.5%;
+      top: 0;
       border: none;
       background-color: transparent;
       cursor: pointer;
