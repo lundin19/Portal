@@ -26,7 +26,7 @@ padding-left: 4.5em;
       display: grid;
       align-items: center;
       grid-template-columns: repeat(2, 300px 0);
-      width: auto;
+      width: 100%;
       visibility: visible;
       margin-left: -50%;
       background: none !important
@@ -81,7 +81,7 @@ padding-left: 4.5em;
   
   /* Center website */
   .main {
-    max-width: 1800px;
+    max-width: 1000px;
     margin: auto;
   }
   

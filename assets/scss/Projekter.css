@@ -30,8 +30,9 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-grid-columns: (300px 0)[2];
         grid-template-columns: repeat(2, 300px 0);
-    width: auto;
+    width: 100%;
     visibility: visible;
     margin-left: -50%;
     background: none !important;
@@ -72,6 +73,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-grid-columns: (25vh)[2];
         grid-template-columns: repeat(2, 25vh);
   }
   * {
@@ -86,7 +88,7 @@ h1 {
   }
   /* Center website */
   .main {
-    max-width: 1800px;
+    max-width: 1000px;
     margin: auto;
   }
   .row {
