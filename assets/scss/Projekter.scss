@@ -63,7 +63,7 @@ padding-left: 4.5em;
       height: auto;
       display: grid;
       align-items: center;
-      grid-template-columns: repeat(2, 300px);
+      grid-template-columns: repeat(2, 25vh);
       }
 
   
@@ -159,4 +159,20 @@ padding-left: 4.5em;
   input[type=text]:focus { 
     width: 30%; 
   } 
+  .footer {
+    position: absolute;
+    bottom: -200%;
+    width: 100%;
+    height: 8rem; 
+    background-color: rgb(250, 250, 250);
+    left: -0%;
+    border: 4px solid rgb(0, 0, 0);
+ }
+ .techcollege{
+  left: 30%;
+  position: relative;
+  top: -30%;
+  color: black;
+  font-weight: bolder;
+ }
   }
