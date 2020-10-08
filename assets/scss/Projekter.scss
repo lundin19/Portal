@@ -52,6 +52,12 @@ padding-left: 4.5em;
       font-size: 10px;
       font-weight: bold;
       vertical-align: middle;
+      display: table;
+    }
+    .btn:after {
+      content: "";
+      clear: both;
+      display: table;
     }
     .btn span {
     right: 8px;
