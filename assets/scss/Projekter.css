@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .text {
   padding: 20px;
   width: 30%;
@@ -146,10 +147,14 @@ body {
   background-color: red;
   border-radius: 15px;
   cursor: pointer;
-  color: aliceblue;
+  color: white;
   -webkit-transform: scale(2);
           transform: scale(2);
   margin: 100px;
+}
+
+.forløb {
+  color: white;
 }
 
 .btn:hover {
@@ -191,6 +196,22 @@ input[type=text]:focus {
 
 .techcollege {
   left: 30%;
+  position: relative;
+  top: -30%;
+  color: black;
+  font-weight: bolder;
+}
+
+.phone {
+  left: 40%;
+  position: relative;
+  top: -30%;
+  color: black;
+  font-weight: bolder;
+}
+
+.email {
+  left: 50%;
   position: relative;
   top: -30%;
   color: black;

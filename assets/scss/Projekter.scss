@@ -136,9 +136,12 @@ body {
   background-color: rgb(255, 0, 0);
   border-radius: 15px;
   cursor: pointer;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   transform: scale(2);
   margin: 100px;
+}
+.forløb{
+  color: rgb(255, 255, 255); 
 }
 
 .btn:hover {
@@ -181,4 +184,19 @@ position: relative;
 top: -30%;
 color: black;
 font-weight: bolder;
+}
+
+.phone{
+  left: 40%;
+  position: relative;
+  top: -30%;
+  color: black;
+  font-weight: bolder;  
+}
+.email{
+  left: 50%;
+  position: relative;
+  top: -30%;
+  color: black;
+  font-weight: bolder;  
 }

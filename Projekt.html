@@ -4,10 +4,31 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="assets/scss/Projekter.css">
+<link rel="stylesheet" href="assets/scss/menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
+    <header>
+      <input type="checkbox" id="toggle" style="display: none" />
+      <label class="toggle-btn" for="toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Webudvikler</a></li>
+          <li><a href="#">Mediegrafiker</a></li>
+          <li><a href="#">Digital media</a></li>
+          <li><a href="#">Grafisk tekniker</a></li>
+        </ul>
+
+        
+      
+    </header>
+
         <h1>Webudvikler</h1>
         <div class="text">
             Det meste af undervisningen på webudvikleruddannelsen foregår foran en computer på skolen, da uddannelsen er skolebaseret. Det betyder også, at du ikke behøver en praktikplads for at gennemføre uddannelsen.
@@ -22,8 +43,8 @@
   
   <div id="myBtnContainer">
     <button class="btn active" onclick="filterSelection('all')">vis alle</button>
-    <button class="btn" onclick="filterSelection('Grundforløb')"><span>Grundforløb</span></button>
-    <button class="btn" onclick="filterSelection('hovedforløb')"><span>hovedforløb</span></button>
+    <button class="btn" onclick="filterSelection('Grundforløb')"><span class="forløb">Grundforløb</span></button>
+    <button class="btn" onclick="filterSelection('hovedforløb')"><span class="forløb">hovedforløb</span></button>
     <input id="searchbar" onkeyup="search_projekt()" type="text"
      name="search" placeholder="Search projekt.."> 
   </div>
@@ -129,11 +150,14 @@
   <!-- END MAIN -->
   </div>
   <div class="footer">
-    <img class="logo" src="img/imageedit_3_3807412709.png" alt="" srcset="" style="width: 10%;margin-top: 5px; margin-left: 5px;">
+    <img class="logo" src="img/imageedit_3_3807412709.png" alt="" srcset="" style="width: 10%;margin-top: 10px; margin-left: 20px;">
     <a class="techcollege" href="https://techcollege.dk/uddannelser/webudvikler/" target="_blank">TECHCOLLEGE</a>
+    <a class="phone" href="tel:72501000"> 7250 1000</a>
+    <a class="email" href = "mailto: mail@techcollege.dk">mail@techcollege.dk</a>
   </div>         
 
 
 <script src="assets/js/projekt.js"></script>
+<script src="/assets/js/login.js"></script>
 </body>
 </html>
