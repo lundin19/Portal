@@ -59,12 +59,11 @@ padding-left: 4.5em;
       text-align: center;
       }
       .row{
-      width: 100%;				/* width of image (px or % or auto) */
+      width: auto;			/* width of image (px or % or auto) */
       height: auto;
       display: grid;
       align-items: center;
       grid-template-columns: repeat(2, 25vh);
-      }
       }
 
   
@@ -176,3 +175,4 @@ padding-left: 4.5em;
   color: black;
   font-weight: bolder;
  }
+  }
