@@ -24,8 +24,23 @@ header nav {
   z-index: 1;
 }
 
-header nav button {
-  position: absolute;
+header nav .button {
+  background-color: #FF0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+header nav button:hover {
+  opacity: 0.8;
+}
+
+header .btn-login {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -36,19 +51,26 @@ header nav button {
   transition: all 0.2s;
 }
 
-header nav button:hover {
+header .btn-login:hover {
   color: black;
 }
 
-header nav .btn-login {
-  left: 76.5%;
+header .btn-registrer {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  margin-top: 50px;
+  font-size: 18px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-header nav .btn-registrer {
-  left: 81.5%;
+header .btn-registrer:hover {
+  color: black;
 }
 
-header nav .span-btn {
+header .span-btn {
   position: absolute;
   height: 35px;
   width: 2px;
@@ -57,7 +79,7 @@ header nav .span-btn {
   top: 4.5%;
 }
 
-header nav ul {
+header ul {
   list-style-type: none;
   padding: 0;
   margin: 0;

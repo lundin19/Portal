@@ -4,64 +4,133 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="assets/scss/Projekter.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
         <h1>Webudvikler</h1>
-        <div>
+        <div class="text">
             Det meste af undervisningen på webudvikleruddannelsen foregår foran en computer på skolen, da uddannelsen er skolebaseret. Det betyder også, at du ikke behøver en praktikplads for at gennemføre uddannelsen.
             Undervisningen er planlagt sådan, at der ikke er langt imellem teori og praksis – det vil sige, at du får mange gode muligheder for at prøve det lærte af.
             I faget Praktisk Webudvikling vil du komme til at arbejde med virkelighedsnære opgaver, hvor løsningerne vil blive set og brugt af andre elever og lærere på skolen.
             </div>
-            <div class="gallery-grid">
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=1.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=2.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=3.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=4.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=5.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=6.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=7.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=8.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=9.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=10.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=11.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-                <figure class="gallery-frame">
-                  <img class="gallery-img" src="https://picsum.photos/230/300?random=12.jpg" alt="symbol image" title="symbol image">
-                  <figcaption>Image Title</figcaption>
-                </figure>
-              </div><!-- end:gallery-grid -->
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+  
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">vis alle</button>
+    <button class="btn" onclick="filterSelection('Grundforløb')"><span>Grundforløb</span></button>
+    <button class="btn" onclick="filterSelection('hovedforløb')"><span>hovedforløb</span></button>
+    <input id="searchbar" onkeyup="search_projekt()" type="text"
+     name="search" placeholder="Search projekt.."> 
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column hovedforløb">
+      <div class="content">
+        <a href="https://www.rockstargames.com/reddeadredemption2/"TARGET="_blank">
+        <img class="pic" src="img/Projekt-billeder/rdr2.JPG" alt="rdr2" style="width:100%">
+      </a>
+        <h4>Red dead Redemtion 2</h4>
+        <p>Red Dead Redemption 2 is an action-adventure game developed and released by Rockstar Games.</p>
+      
+      </div>
+    </div>
+    <div class="column Grundforløb">
+      <div class="content">
+      <a href="https://blog.counter-strike.net/"TARGET="_blank">
+      <img class="pic" src="img/Projekt-billeder/cs go.JPG" alt="csgo" style="width:100%">
+    </a>
+        <h4>counter strike global offensive</h4>
+        <p>Counter-Strike: Global Offensive is a tactical online first-person shooter developed by Valve Corporation. </p>
+      </div>
+    </div>
+    <div class="column Grundforløb">
+      <div class="content">
+      <a href="https://www.playstation.com/en-us/games/the-last-of-us-part-ii-ps4/"TARGET="_blank">
+      <img class="pic" src="img/Projekt-billeder/last of us2.JPG"" alt="tlou2" style="width:100%">
+    </a>
+        <h4>last of us 2</h4>
+        <p>The Last of Us Part II is an action-adventure game in 2020 developed by Naughty Dog.</p>
+      </div>
+    </div>
+    
+    <div class="column Grundforløb">
+      <div class="content">
+        <a href="http://www.jokermovie.net/"TARGET="_blank">
+        <img class="pic" src="img/Projekt-billeder/joker.JPG" alt="joker" style="width:100%">
+        </a>
+        <h4>joker</h4>
+        <p>Joker is a 2019 American crime movie directed by Todd Phillips and starring Joaquin Phoenix as Arthur Fleck.</p>
+      </div>
+    </div>
+    <div class="column hovedforløb">
+      <div class="content">
+      <a href="https://www.pixar.com/feature-films/finding-dory"TARGET="_blank">
+      <img class="pic" src="img/Projekt-billeder/dory.JPG" alt="dory" style="width:100%">
+    </a>
+        <h4>finding dory</h4>
+        <p>Find Dory is a 2016 American animated film produced by Pixar Animation Studios and published by Walt Disney Pictures.</p>
+      </div>
+    </div>
+    <div class="column hovedforløb">
+      <div class="content">
+      <a href="https://www.warnerbros.com/movies/shining"TARGET="_blank">
+      <img class="pic" src="img/Projekt-billeder/1917.JPG" alt="shin" style="width:100%">
+      </a>
+        <h4>1917</h4>
+        <p>1917 is a 2019 British war film directed by Sam Mendes. The film won two Golden Globes</p>
+      </div>
+    </div>
+  
+    <div class="column hovedforløb">
+      <div class="content">
+        <a href="https://www.taylorswift.com/"TARGET="_blank">
+        <img class="pic" src="img/Projekt-billeder/swift.JPG" alt="swift" style="width:100%">
+      </a>
+        <h4>Taylor Swift</h4>
+        <p>Taylor Alison Swift is an American singer, songwriter and actress. Swift has been active in the music business since 2004.</p>
+      </div>
+    </div>
+    <div class="column hovedforløb">
+      <div class="content">
+      <a href="https://www.arianagrande.com/"TARGET="_blank">
+      <img class="pic" src="img/Projekt-billeder/Concert.JPG" alt="ariana" style="width:100%">
+      </a>
+        <h4>Ariana Grande</h4>
+        <p>Ariana Grande-Butera is an American singer and actress. She was born in Florida, Boca Raton and has Italian roots.
+      </p>
+      </div>
+    </div>
+    <div class="column Grundforløb">
+      <div class="content">
+      <a href="http://www.queenonline.com/"TARGET="_blank">
+      <img class="pic" src="img/Projekt-billeder/queens.JPG" alt="queen" style="width:100%">
+      </a>
+        <h4>Queen</h4>
+        <p>Queen is a British music group with members Freddie Mercury, Brian Harold May, Roger Taylor, and John Deacon.</p>
+      </div>
+    </div>
+    <div class="column Grundforløb">
+      <div class="content">
+      <a href="https://www.nfrealmusic.com/#home"TARGET="_blank">
+      <img class="pic" src="img/Projekt-billeder/NF.JPG" alt="NF" style="width:100%">
+      </a>
+        <h4>NF</h4>
+        <p>Nathan John Feuerstein, known by his initials NF, is an American rapper, singer and songwriter. He released a self-titled EP in 2014 with Capitol CMG.</p>
+      </div>
+  <!-- END GRID -->
+  </div>
+  
+  <!-- END MAIN -->
+  </div>
+              
+
+
+<script src="assets/js/projekt.js"></script>
 </body>
 </html>

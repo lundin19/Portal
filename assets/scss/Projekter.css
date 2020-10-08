@@ -1,6 +1,6 @@
-div {
+.text {
   padding: 20px;
-  width: 500px;
+  width: 30%;
   height: 340px;
   text-align: left;
   padding-top: 0.2em;
@@ -14,37 +14,162 @@ h1 {
   padding-left: 4.5em;
 }
 
-.gallery-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1.5rem;
-  justify-items: center;
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 1080px) {
+  .text {
+    width: 100%;
+    position: absolute;
+    left: -59px;
+  }
+  .main {
+    top: 600px;
+    position: relative;
+  }
+  .content {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (300px 0)[2];
+        grid-template-columns: repeat(2, 300px 0);
+    width: auto;
+    visibility: visible;
+    margin-left: -50%;
+    background: none !important;
+  }
+  .pic {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin: auto auto;
+    padding-top: auto;
+  }
+  p {
+    text-align: center;
+    visibility: hidden;
+  }
+  h4 {
+    visibility: hidden;
+  }
+  .btn {
+    width: 7.1em;
+    height: auto;
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  .btn span {
+    right: 8px;
+    position: relative;
+    text-align: center;
+  }
+  .row {
+    width: 100%;
+    /* width of image (px or % or auto) */
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: (300px)[2];
+        grid-template-columns: repeat(2, 300px);
+  }
 }
 
-/* The Picture Frame */
-.gallery-frame {
-  padding: .5rem;
-  font-size: 1.2rem;
-  text-align: center;
-  background-color: #333;
-  color: #d9d9d9;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* The Images */
-.gallery-img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+  overflow-x: hidden;
 }
 
-.gallery-img:hover {
-  opacity: .7;
+/* Center website */
+.main {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: black;
+  outline: none;
+  padding: 12px 16px;
+  background-color: red;
+  border-radius: 15px;
+  cursor: pointer;
+  color: aliceblue;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin: 100px;
+}
+
+.btn:hover {
+  background-color: #020000;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+#searchbar {
+  margin-left: 15%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input[type=text] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus, 
+       change its width to 100% */
+input[type=text]:focus {
+  width: 30%;
 }
 /*# sourceMappingURL=Projekter.css.map */
