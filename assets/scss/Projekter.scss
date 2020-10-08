@@ -59,12 +59,11 @@ padding-left: 4.5em;
       text-align: center;
       }
       .row{
-      width: 100%;				/* width of image (px or % or auto) */
+      width: auto;			/* width of image (px or % or auto) */
       height: auto;
       display: grid;
       align-items: center;
       grid-template-columns: repeat(2, 300px);
-      }
       }
 
   
@@ -160,3 +159,4 @@ padding-left: 4.5em;
   input[type=text]:focus { 
     width: 30%; 
   } 
+  }
