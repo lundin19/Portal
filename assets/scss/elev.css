@@ -11,6 +11,7 @@ main .elev-card {
           justify-content: center;
   -webkit-box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 main .elev-card .avatar {
@@ -36,6 +37,7 @@ main .elev-card .elev-navn {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  z-index: 2;
 }
 
 main .elev-card .btn-edit {
@@ -50,6 +52,7 @@ main .elev-card .btn-edit {
   color: white;
   background-color: red;
   cursor: pointer;
+  z-index: 3;
 }
 
 main .elev-card .btn-edit:hover {
