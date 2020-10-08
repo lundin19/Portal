@@ -83,6 +83,38 @@ h1 {
     -ms-grid-columns: (25vh)[2];
         grid-template-columns: repeat(2, 25vh);
   }
+  .footer {
+    top: 100%;
+    text-align: center;
+    left: -40%;
+  }
+  .techcollege {
+    float: left;
+    margin-top: 50px;
+    color: black;
+    font-weight: bolder;
+  }
+  .phone {
+    float: left;
+    margin-top: 80px;
+    margin-left: -140px;
+    position: relative;
+    top: -30%;
+    color: black;
+    font-weight: bolder;
+  }
+  .email {
+    float: left;
+    margin-top: 110px;
+    margin-left: -230px;
+    position: relative;
+    top: -30%;
+    color: black;
+    font-weight: bolder;
+  }
+  .logo {
+    visibility: hidden;
+  }
 }
 
 * {

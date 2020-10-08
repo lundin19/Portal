@@ -71,8 +71,40 @@ padding-left: 4.5em;
     align-items: center;
     grid-template-columns: repeat(2, 25vh);
     }
+    .footer{
+      top: 100%;
+      text-align: center;
+      left: -40%;
     }
-
+    .techcollege{
+      float: left;
+      margin-top: 50px;
+      color: black;
+      font-weight: bolder;
+      }
+      
+      .phone{
+        float: left;
+        margin-top: 80px;
+        margin-left: -140px;
+        position: relative;
+        top: -30%;
+        color: black;
+        font-weight: bolder;  
+      }
+      .email{
+        float: left;
+        margin-top: 110px;
+        margin-left: -230px;
+        position: relative;
+        top: -30%;
+        color: black;
+        font-weight: bolder;  
+      }
+      .logo{
+       visibility: hidden;
+      }
+  }
 
 
 * {
