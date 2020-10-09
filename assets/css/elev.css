@@ -1,3 +1,10 @@
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
 main .elev-card {
   display: -ms-grid;
   display: grid;
@@ -11,7 +18,6 @@ main .elev-card {
           justify-content: center;
   -webkit-box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
-  z-index: 1;
 }
 
 main .elev-card .avatar {
@@ -26,9 +32,10 @@ main .elev-card .avatar {
 main .elev-card .elev-navn {
   position: absolute;
   top: 34%;
-  left: 9.5%;
+  left: 8.5%;
+  margin-bottom: 15px;
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 300;
   color: black;
   width: -webkit-fit-content;
@@ -37,7 +44,6 @@ main .elev-card .elev-navn {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  z-index: 2;
 }
 
 main .elev-card .btn-edit {
@@ -46,17 +52,17 @@ main .elev-card .btn-edit {
   left: 9%;
   font-size: 15px;
   width: 14rem;
-  height: 30px;
-  border-radius: 15px;
+  height: 40px;
+  border-radius: 20px;
   border: none;
   color: white;
   background-color: red;
   cursor: pointer;
-  z-index: 3;
+  z-index: 0;
 }
 
 main .elev-card .btn-edit:hover {
-  background-color: #c50c0c;
+  background-color: #c00303;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -68,14 +74,117 @@ main .elev-card .p-bio {
       justify-self: center;
   width: 70%;
   text-align: left;
-  margin-top: 85px;
+  margin-top: 130px;
   letter-spacing: 1px;
   line-height: 25px;
   color: black;
 }
 
-main .elev-card .fab {
-  font-size: 28px;
+main .elev-card .icon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 20px;
+}
+
+main .elev-card .icon .fab {
+  font-size: 32px;
+  margin: 0 auto;
+  color: #4c6ef5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+main .elev-card .icon .fas {
+  font-size: 32px;
+  margin: 0 auto;
+  color: #4c6ef5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+main .project-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40%;
+  margin-top: 93px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .project-container .upload-new {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
   text-align: center;
-  color: #4C6EF5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.3);
+  width: 271px;
+  height: 276px;
+  cursor: pointer;
+}
+
+main .project-container .upload-new input.upload {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+main .project-container .upload-new .custom-span {
+  display: -ms-grid;
+  display: grid;
+  font-size: 100px;
+  color: red;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .project-container .upload-new:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .project-container div img {
+  width: 271px;
+  height: 276px;
+  cursor: pointer;
+}
+
+main .project-container div img:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
